@@ -11,7 +11,7 @@ Commands:
 or
   -match <prefix>
 
-  Search words by entered <prefix>. Command without <prefix> process all prefixes from the WordPrefixCollection.txt file.
+  Search words by specified <prefix>. Command without <prefix> processes all prefixes from the WordPrefixCollection.txt file.
 
   -add <word> <count>
 
@@ -27,12 +27,12 @@ or
 
 *) WordAutoCompleteClient.exe
 
-Allow to send <prefix> to the WordAutoCompleteServer and receive from it popular words.
+Allow to send <prefix> to the WordAutoCompleteServer and receive popular words.
 
-Host name and number of a Port for connection contains in the config file.
+Host name and port number for connection are specified in the config file.
 
 *) WordAutoCompleteServer.exe
 
-Receives <prefix> from the WordAutoCompleteClient  and then performs a search for popular words using the prefix tree.
+Receives <prefix> from the WordAutoCompleteClient and performs a search for popular words using the prefix tree.
 
-Number of a Port for listening contains in the config file.
+Port number to listen on is specified in the config file.
