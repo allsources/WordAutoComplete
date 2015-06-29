@@ -7,7 +7,7 @@ Standalone console application.
 
 Commands:
 
-  <prefix>
+  *prefix*
 or
   -match <prefix>
 
