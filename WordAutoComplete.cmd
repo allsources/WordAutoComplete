@@ -3,7 +3,11 @@ set destination=c:\temp\WordAutoComplete
 
 rd %destination% /S/Q
 
-robocopy ..\WordAutoComplete %destination% /E
+xcopy ..\WordAutoComplete\README.md %destination%\ /Y
+xcopy ..\WordAutoComplete\WordAutoComplete.sln %destination%\ /Y
+robocopy ..\WordAutoComplete\Build %destination%\Build /E
+robocopy ..\WordAutoComplete\WordAutoComplete %destination%\WordAutoComplete /E
+robocopy ..\WordAutoComplete\WordAutoCompleteTest %destination%\WordAutoCompleteTest /E
 
 del %destination%\*.cmd
 del %destination%\*.suo /F/Q/A:H
