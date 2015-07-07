@@ -7,6 +7,7 @@ namespace WordAutoComplete.WordCollections
 {
   /// <summary>
   /// Represents words collection based on <see cref="Dictionary"/> object.
+  /// This class created to compare performance with the prefix-tree class.
   /// </summary>
   public class WordDictionaryCollection : Dictionary<string, Word>, IWordCollection
   {
